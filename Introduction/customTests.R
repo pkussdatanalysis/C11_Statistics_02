@@ -23,7 +23,7 @@ post_on_demand <- function(){
   selection <- (environment(sys.function(1))$e)$val
   if(selection == "Yes"){
     student_no <- readline("Please input your student_number:(eg.170121xxxxx)? ")
-    sbj=paste(student_no,"C11_01",sep="-")
+    sbj=paste(student_no,"C11_02",sep="-")
     send.mail(from = "ayahui3@126.com",
           to = c("datanalysis2018@126.com"),
           subject = sbj,
